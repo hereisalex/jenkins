@@ -1,0 +1,194 @@
+// defining the variables
+
+@bgcolor: rgb(0, 0, 0);
+@darktext: black;
+@lighttext: rgb(255, 255, 255);
+@headerbg: rgb(0, 0, 0);
+@h1fontsize: 60px;
+@h2fontsize: 20px;
+@h3fontsize: 16px;
+@ahover: #0DD5FA;
+@mainfont: 'Poppins', Arial, Helvetica, sans-serif;;
+@accentcolor: rgb(0, 172, 149);
+
+#name {
+  color: @accentcolor;
+}
+
+a {
+  color: @lighttext;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @accentcolor;
+}
+
+
+html {
+    font-family: @mainfont;
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: @bgcolor;
+    color: @lighttext;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: @h1fontsize;
+    font-weight: bold;
+  
+}
+
+h2 {
+    font-size: @h2fontsize;
+}
+
+h3 {
+    font-size: @h3fontsize;
+}
+
+#resumebtn {
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  border-color: @accentcolor;
+  border-radius: 12px;
+}
+
+#resumebtn:hover {
+  background-color: @accentcolor;
+  border: none;
+  padding: 7px;
+
+}
+
+
+
+#aurora {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 50%;
+  z-index: -1;
+}
+
+#focus1 {
+	-webkit-animation: focus-animation 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: focus-animation 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+#focus2 {
+  -webkit-animation: focus-animation 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1.5s both;
+          animation: focus-animation 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1.5s both;
+  
+}
+#focus3 {
+  -webkit-animation: focus-animation 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 2s both;
+          animation: focus-animation 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 2s both;
+  
+}
+
+#fade-in {
+	-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+	        animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+#headshot {
+  border: 5px solid @accentcolor;
+  border-radius: 50px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-webkit-keyframes focus-animation {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-animation {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+
+  .preview {
+    height: 300px;
+    width: 100%;
+  }
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+
+  .preview {
+    height: 200px;
+  }
+// using the rounded mixin
+
+
